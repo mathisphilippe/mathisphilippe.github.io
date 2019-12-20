@@ -1,7 +1,7 @@
 /* MAIN */
 
 html {
-    background-color: #BBFCDF;
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     color: #000;
 }
@@ -12,7 +12,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #55D6BE;
+    background-color: rgb(221, 218, 26);
 }
 
 .navbar_logo {
@@ -37,7 +37,7 @@ html {
 
 .navbar_element:hover {
     cursor: pointer;
-    background-color: #BBFCDF;
+    background-color: rgb(221, 218, 26);;
 }
 
 .navbar_element:hover a {
@@ -73,11 +73,13 @@ html {
     font-size: 30px;
     border-bottom: 1px solid #9B2922;
     margin-bottom: 40px;
+    margin: 80px;
 }
 
 .intro_text {
     font-size: 16px;
     line-height: 26px;
+    margin: 160px;
 }
 
 /* FOOTER */
@@ -87,13 +89,83 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #55D6BE;
-    position: fixed;
-    bottom: 0;
+    background-color: rgb(221, 218, 26);
     width: 100%;
     color: #FFF;
+}
+
+.footer.footer--fixed {
+    position: fixed;
+    bottom: 0;
 }
 
 .copyright {
     margin: 15px 0;
 }
+
+/* STAGE */
+
+.stage {
+    display: flex;
+}
+
+.stage_block {
+    width: 50%;
+}
+
+.stage_title {
+    font-size: 30px;
+    border-bottom: 1px solid #9B2922;
+    margin: 40px 0 0 40px;
+    display: inline-block;
+}
+
+.stage_text {
+    margin: 50px;
+}
+
+.stage_img {
+    margin: 60px;
+}
+
+.bureaux_img {
+    margin: 70px;
+}
+
+.bureaux_text {
+    margin: 120px;
+}
+
+.team_title {
+    margin: 40px;
+    font-size: 30px;
+}
+
+.team_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.team_person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.team_person_img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description_block {
+    width: 50%;
+}
+
