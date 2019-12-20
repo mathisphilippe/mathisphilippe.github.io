@@ -104,6 +104,10 @@ html {
     display: flex;
 }
 
+.stage_img {
+    align-items: flex-end;
+}
+
 .stage_block {
     width: 50%;
 }
