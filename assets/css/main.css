@@ -126,6 +126,8 @@ html {
 
 .stage_img {
     margin: 60px;
+    max-width: 750px;
+    max-height: 500px;
 }
 
 .bureaux_img {
@@ -167,5 +169,10 @@ html {
 
 .description_block {
     width: 50%;
+}
+
+.bureaux_img {
+    max-width: 750px;
+    max-height: 500px;
 }
 
