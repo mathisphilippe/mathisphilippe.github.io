@@ -1,13 +1,11 @@
 /* MAIN */
-
 html {
     background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     color: #000;
 }
-  
-/* NAVBAR */
 
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -17,7 +15,7 @@ html {
 
 .navbar_logo {
     font-size: 22px;
-    font-weight: bold; 
+    font-weight: bold;
     margin-left: 20px;
     color: #FFF;
 }
@@ -37,7 +35,7 @@ html {
 
 .navbar_element:hover {
     cursor: pointer;
-    background-color: rgb(221, 218, 26);;
+    background-color: rgb(221, 218, 26);
 }
 
 .navbar_element:hover a {
@@ -45,7 +43,6 @@ html {
 }
 
 /* INTRO */
-
 .intro {
     display: flex;
 }
@@ -83,7 +80,6 @@ html {
 }
 
 /* FOOTER */
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -104,7 +100,6 @@ html {
 }
 
 /* STAGE */
-
 .stage {
     display: flex;
 }
@@ -176,3 +171,41 @@ html {
     max-height: 500px;
 }
 
+.definition_text {
+    display: none;
+}
+
+.lexique {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.definition_title {
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.definition_panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.definition_title:after {
+    content: '\02795';
+    color: black;
+    font-size: 13px;
+    float: right;
+    margin-left: 15px;
+}
+
+.active:after {
+    content: "\2796";
+}
