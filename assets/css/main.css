@@ -5,6 +5,10 @@ html {
     color: #000;
 }
 
+section {
+    padding: 25px;
+}
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -31,6 +35,7 @@ html {
 .navbar_element a {
     color: #FFF;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .navbar_element:hover {
@@ -45,6 +50,7 @@ html {
 /* INTRO */
 .intro {
     display: flex;
+    justify-content: center;
 }
 
 .intro_block {
@@ -57,13 +63,17 @@ html {
     align-items: center;
 }
 
+.intro_img {
+    max-width: 100%;
+}
+
 .intro_block.second {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .intro_title {
@@ -73,10 +83,9 @@ html {
     margin: 80px;
 }
 
-.intro_text {
+.intro_text, .stage_text {
     font-size: 16px;
     line-height: 26px;
-    margin: 160px;
 }
 
 /* FOOTER */
@@ -102,6 +111,13 @@ html {
 /* STAGE */
 .stage {
     display: flex;
+    align-items: center;
+}
+
+ul.stage_text {
+    list-style-type: circle;
+    padding-left: 35px;
+    margin: 10px 0;
 }
 
 .stage_img {
@@ -112,34 +128,25 @@ html {
     width: 50%;
 }
 
-.stage_title {
-    font-size: 30px;
-    border-bottom: 1px solid #9B2922;
-    margin: 40px 0 0 40px;
-    display: inline-block;
-}
-
-.stage_text {
-    margin: 50px;
+.stage_block.first {
+    padding: 30px 30px 30px 0;
 }
 
 .stage_img {
-    margin: 60px;
-    max-width: 750px;
-    max-height: 500px;
+    max-width: 100%;
 }
 
 .bureaux_img {
-    margin: 70px;
+    max-width: 100%;
 }
 
-.bureaux_text {
-    margin: 120px;
-}
+.bureaux_text {}
 
-.team_title {
-    margin: 40px;
+.title {
     font-size: 30px;
+    border-bottom: 3px solid #9B2922;
+    display: inline-block;
+    margin-bottom: 30px;
 }
 
 .team_container {
@@ -152,27 +159,46 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 25%;
 }
 
 .team_person_img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
-.description {
+.team_person_text {
+    text-align: center;
+    margin: 15px 0;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.team_person_text span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.description_container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.description_block.second, .description_block.third {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bureaux_text {
+    width: 250px;
+    font-size: 20px;
 }
 
 .description_block {
     width: 50%;
-}
-
-.bureaux_img {
-    max-width: 750px;
-    max-height: 500px;
 }
 
 .definition_text {
@@ -212,4 +238,92 @@ html {
 
 .active:after {
     content: "\2796";
+}
+
+.music-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.music-container a {
+    display: block;
+    width: 33%;
+}
+
+.music_img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .team_person {
+        width: 33.3%;
+    }
+
+    .stage {
+        flex-wrap: wrap;
+    }
+
+    .stage_block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .intro {
+        flex-wrap: wrap;
+    }
+
+    .intro_block {
+        width: 100%;
+    }
+
+    .footer.footer--fixed {
+        position: relative;
+    }
+
+    .team_person {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .description_block {
+        width: 100%;
+    }
+
+    .bureaux_text {
+        margin: 30px;
+        width: 100%;
+    }
+
+    .description_block.third {
+        order: 4;
+    }
+
+    .description_block.fourth {
+        order: 3;
+    }
+
+    .music-container a {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team_person {
+        width: 100%;
+    }
+
+    section {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar_element {
+        padding: 20px 5px;
+    }
 }
